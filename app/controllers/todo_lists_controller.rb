@@ -1,6 +1,11 @@
 class TodoListsController < ApplicationController
   before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
 
+  def apple_app_site_association 
+    association_json = File.read(Rails.public_path + "apple-app-site-association")
+    render :json => association_json, :content_type => "application/pkcs7-mime"
+  end
+  
   # GET /todo_lists
   # GET /todo_lists.json
   def index

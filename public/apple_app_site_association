@@ -1,0 +1,13 @@
+{
+   "applinks":{
+      "apps":[],
+      "details":[
+         {
+            "appID":"4VJT9264H8.com.merrillcorp.datasiteone",
+            "paths":[
+               "/content/*"
+            ]
+         }
+      ]
+   }
+}
