@@ -15,7 +15,7 @@ group :production, :staging do
 end
 
 group :development, :test do
-gem 'sqlite3', '~> 1.3.13'
+# gem 'sqlite3', '~> 1.3.13'
 end
 
 # Use Puma as the app server
