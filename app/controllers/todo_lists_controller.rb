@@ -8,7 +8,7 @@ class TodoListsController < ApplicationController
   end
 
   def apple_app_site
-    association_json = File.read(Rails.root + "apple-app-site-association")
+    association_json = File.read(Rails.public_path.join("apple-app-site-association"))
     render :json => association_json, :content_type => "application/json"
   end
 
