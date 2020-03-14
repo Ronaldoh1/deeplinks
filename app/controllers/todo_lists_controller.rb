@@ -7,9 +7,10 @@ class TodoListsController < ApplicationController
     @todo_lists = TodoList.all
   end
 
-  def apple_app_site
-    association_json = File.read(Rails.public_path.join("apple-app-site-association"))
-    render :json => association_json, :content_type => "application/json"
+   def apple_app_site
+    association_json = File.read(Rails.public_path + "apple-app-site-association")
+    render :json => association_json, :content_type => "application/pkcs7-mime"
+
   end
 
   # GET /todo_lists/1
