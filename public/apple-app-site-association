@@ -12,7 +12,7 @@
       {
         "appID": "4VJT9264H8.com.merrillcorp.datasiteone-debug",
         "paths": [
-          "/webviewer",",
+          "/webviewer",
           "/manda/project/*"
         ]
       }
